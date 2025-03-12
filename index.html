@@ -3,41 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenido a TEMBA, donde nos comprometemos a ofrecer la mejor atención.">
-    <title>TEMBA ESTETICA</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Salón de Estética TEMBA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a TEMBA </h1>
-        <p>Nuestro compromiso es ofrecerte la mejor atención para ti.</p>
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a>
-                    <ul class="dropdown">
-                        <li><a href="consultoria.html">Consultoría</a></li>
-                        <li><a href="soporte.html">Soporte Técnico</a></li>
-                        <li><a href="descuentos.html">Descuentos</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">Contáctanos</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
+        <h1>Salón de Estética TEMBA</h1>
     </header>
 
-    <section>
-        <h2>Servicios</h2>
-        <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades:</p>
+    <section id="services">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos una variedad de servicios de belleza y estética para realzar tu belleza natural.</p>
         <ul>
-            <li>Asesoría Personalizada</li>
-            <li>Soporte Técnico 24/7</li>
-            <li>Descuentos en Servicios Premium</li>
+            <li>Manicura y Pedicura</li>
+            <li>Tratamientos Faciales</li>
+            <li>Maquillaje Profesional</li>
+            <li>Masajes Relajantes</li>
         </ul>
     </section>
 
-    <footer>
-        <p>&copy; 2023 TEMBA. Todos los derechos reservados.</p>
+    <section id="gallery">
+        <h2>Galería</h2>
+        <div class="gallery-grid">
+            <img src="images/foto1.jpg" alt="Servicio de manicura">
+            <img src="images/foto2.jpg" alt="Tratamiento facial">
+            <img src="images/foto3.jpg" alt="Maquillaje profesional">
+            <img src="images/foto4.jpg" alt="Masaje relajante">
+        </div>
+        <h3>Videos Destacados</h3>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contacto</h2>
+        <p>Para citas y consultas, contáctanos al:</p>
+        <p><i class="fas fa-phone"></i> 123-456-7890</p>
+        <p><a href="mailto:info@temba.com">info@temba.com</a></p>
+        <p>Síguenos en redes sociales:</p>
+        <p>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </p>
     </footer>
 </body>
 </html>
