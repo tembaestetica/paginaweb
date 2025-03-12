@@ -1,53 +1,97 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #007bff;
+    background: #6C63FF;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-nav {
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 315px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
     margin: 10px 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    display: inline-block;
-    position: relative; /* Necesario para el menú desplegable */
-}
-
-ul li a {
-    color: white;
+footer a {
+    color: #6C63FF;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
 }
 
-ul li:hover {
-    background-color: #0056b3; /* Cambia el color al pasar el ratón */
+footer a:hover {
+    text-decoration: underline;
 }
-
-.dropdown {
-    display: none; /* Oculta el menú desplegable por defecto */
-    position: absolute; /* Coloca el menú desplegable en relación con su elemento padre */
-    background-color: #007bff;
-    z-index: 1; /* Asegúrate de que el menú aparezca sobre otros elementos */
-}
-
-ul li:hover .dropdown {
-    display: block; /* Muestra el menú desplegable al pasar el ratón */
-}
-
-.dropdown li {
-    display: block; /* Muestra los elementos de la lista en bloque */
-    width: 180px; /* Ancho del menú desplegable */
