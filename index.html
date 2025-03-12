@@ -10,14 +10,17 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">TEMBA Estética</div>
+            <ul class="nav-links">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#services">Servicios</a></li>
                 <li><a href="#gallery">Galería</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
-        <h1>Salón de Estética TEMBA</h1>
     </header>
 
     <section id="services">
@@ -41,8 +44,8 @@
         </div>
         <h3>Videos Destacados</h3>
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO_1" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/ID_DEL_VIDEO_2" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -58,5 +61,15 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
         </p>
     </footer>
+
+    <script>
+        // Script para el menú desplegable
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
