@@ -12,18 +12,42 @@ header {
     text-align: center;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+nav {
+    margin: 10px 0;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: white;
+ul {
+    list-style: none;
+    padding: 0;
 }
+
+ul li {
+    display: inline-block;
+    position: relative; /* Necesario para el menú desplegable */
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+ul li:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el ratón */
+}
+
+.dropdown {
+    display: none; /* Oculta el menú desplegable por defecto */
+    position: absolute; /* Coloca el menú desplegable en relación con su elemento padre */
+    background-color: #007bff;
+    z-index: 1; /* Asegúrate de que el menú aparezca sobre otros elementos */
+}
+
+ul li:hover .dropdown {
+    display: block; /* Muestra el menú desplegable al pasar el ratón */
+}
+
+.dropdown li {
+    display: block; /* Muestra los elementos de la lista en bloque */
+    width: 180px; /* Ancho del menú desplegable */
