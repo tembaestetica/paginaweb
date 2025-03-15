@@ -4,23 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Página con menú desplegable">
-  <meta name="keywords" content="HTML, CSS, menú desplegable">
-  <title>Página con Menú Desplegable</title>
+  <meta name="description" content="Página con menú desplegable y fondo de imagen">
+  <meta name="keywords" content="HTML, CSS, menú desplegable, imagen de fondo">
+  <title>Página con Imagen de Fondo</title>
 
   <!-- Estilos CSS -->
   <style>
+    /* Estilo para el body, para que ocupe toda la página */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      height: 100%;
+      background-image: url('tu-imagen.jpg'); /* Aquí pones la URL de tu imagen */
+      background-size: cover; /* La imagen cubre toda la pantalla */
+      background-position: center center; /* La imagen se centra */
+      background-attachment: fixed; /* Hace que la imagen de fondo no se mueva al hacer scroll */
+      font-family: Arial, sans-serif;
+      color: white;
     }
 
     /* Estilo para el encabezado */
     header {
-      background-color: #333;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para que el texto sea visible */
       color: white;
       padding: 10px 0;
+      text-align: center;
     }
 
     nav ul {
@@ -28,7 +36,6 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      text-align: center;
     }
 
     nav ul li {
@@ -47,7 +54,7 @@
       background-color: #575757;
     }
 
-    /* Estilo para el menú desplegable */
+    /* Menú desplegable */
     nav ul li ul {
       display: none;
       position: absolute;
@@ -70,9 +77,24 @@
       text-align: left;
     }
 
-    /* Cambiar color al pasar el ratón sobre los sub-enlaces */
     nav ul li ul li a:hover {
       background-color: #444;
+    }
+
+    /* Estilo para el contenido principal */
+    main {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.5);
     }
   </style>
 </head>
@@ -100,10 +122,8 @@
 
   <!-- Contenido principal -->
   <main>
-    <section>
-      <h1>Bienvenido a nuestra Página Web</h1>
-      <p>En este sitio, ofrecemos una variedad de servicios, incluyendo diseño web, desarrollo de aplicaciones y SEO.</p>
-    </section>
+    <h1>Bienvenido a nuestra Página Web</h1>
+    <p>En este sitio, ofrecemos una variedad de servicios, incluyendo diseño web, desarrollo de aplicaciones y SEO.</p>
   </main>
 
   <!-- Pie de página -->
