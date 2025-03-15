@@ -47,7 +47,6 @@ crossorigin="anonymous" integrity="sha384-6c1HLByuy01YNtvGohMOIKsMDD6BHkzF1pyb/f
         if (confirmButton) {
             confirmButton.onclick = dynamicLoadScript;
         }
-    });
 
     
 </script> 
@@ -80,14 +79,13 @@ crossorigin="anonymous" integrity="sha384-6c1HLByuy01YNtvGohMOIKsMDD6BHkzF1pyb/f
                                     }
                                 }
                                 submitFormCb();
-                            });
+                
                         } catch (e) {
                             var formError = document.querySelector('.u-form-send-error');
 
                             if (formError) {
                                 formError.innerText = 'Site Owner Error: ' + e.message.replace(/:[\s\S]*/, '');
-                                formError.style.display = 'block';
-                            }
+                                formError.style.display = 'block'; }
                         }
                     },
 
@@ -97,16 +95,15 @@ crossorigin="anonymous" integrity="sha384-6c1HLByuy01YNtvGohMOIKsMDD6BHkzF1pyb/f
                 };
 
                 window.recaptchaObject = recaptcha;
-            })(
+
                 grecaptcha,
                 
                 '6LetPRgiAAAAAGX121nVdkYGTN-RfCXh4wAlbDFh',
                 {'contact': 'contact'}
             );
-        });
+
     
 </script>
-});
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gs tatic.com/_/translate http//ss/k-translate_http.tr.N...M.L.W.O/am-AAY/d=0/rs=AN8SPFrTSMIVWAFISYN4u74dPJrX0HgUsw/m-el_main_css">
 <style id="____web-inspector-hide-shortcut-style___">
 .__web-inspector-hide-shortcut_,
